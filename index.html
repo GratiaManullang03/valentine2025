@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Happy Valentine's Day, My Love</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="heart-loader"></div>
+		</div>
+
+		<!-- Background Elements -->
+		<div class="floating-hearts"></div>
+		<div class="particles"></div>
+		<div class="gradient-bg"></div>
+
+		<!-- Main Content -->
+		<div class="container">
+			<!-- Hero Section -->
+			<section class="hero">
+				<h1 class="title" data-text="Happy Valentine's Day">
+					Happy Valentine's Day
+				</h1>
+				<p class="subtitle">To the one who makes my world complete</p>
+			</section>
+
+			<!-- Love Letter Card -->
+			<section class="love-letter">
+				<div class="envelope">
+					<div class="card" id="valentineCard">
+						<div class="card-front">
+							<div class="quote">
+								<p class="quote-text">
+									"If I know what love is, it is because of you."
+								</p>
+								<p class="quote-author">– Hermann Hesse –</p>
+							</div>
+							<button class="flip-button quote-button" onclick="flipCard()">
+								Read More ❤️
+							</button>
+						</div>
+						<div class="card-back">
+							<p class="personal-message">
+								Every moment with you feels like a beautiful dream I never want
+								to wake up from. You are my today and all of my tomorrows. ❤️
+							</p>
+							<button class="flip-button personal-button" onclick="flipCard()">
+								Back ❤️
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interactive Message Section -->
+			<section class="message-section">
+				<div class="message-box">
+					<textarea
+						class="message-input"
+						placeholder="Write your love message here..."
+					></textarea>
+					<button class="send-love" onclick="sendWhatsApp()">
+						Send Love Letter ❤️
+					</button>
+				</div>
+			</section>
+
+			<!-- Love Counter -->
+			<section class="love-counter">
+				<div class="counter-container">
+					<div class="counter-item">
+						<span class="count"><h4>Since</h4></span>
+						<span class="count"><h3>03 October 2022</h3></span>
+					</div>
+				</div>
+				<div class="counter-container">
+					<div class="counter-item">
+						<span class="count days">0</span>
+						<span class="label">Days</span>
+					</div>
+					<div class="counter-item">
+						<span class="count hours">0</span>
+						<span class="label">Hours</span>
+					</div>
+					<div class="counter-item">
+						<span class="count minutes">0</span>
+						<span class="label">Minutes</span>
+					</div>
+					<div class="counter-item">
+						<span class="count seconds">0</span>
+						<span class="label">Seconds</span>
+					</div>
+				</div>
+				<p class="counter-caption">of loving you ❤️</p>
+			</section>
+		</div>
+
+		<!-- Hidden Elements for Animations -->
+		<div class="cursor-heart"></div>
+		<div class="toast-container"></div>
+	</body>
+</html>
