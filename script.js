@@ -57,6 +57,7 @@ function initializeHearts() {
 	setInterval(() => {
 		const heart = document.createElement('div');
 		heart.className = 'floating-heart';
+		heart.innerHTML = '❤️';
 		heart.style.left = Math.random() * 100 + 'vw';
 		heart.style.animationDuration = Math.random() * 3 + 2 + 's';
 		document.querySelector('.floating-hearts').appendChild(heart);
