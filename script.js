@@ -65,16 +65,6 @@ function initializeHearts() {
 	}, 300);
 }
 
-// function initializeParticles() {
-// 	for (let i = 0; i < 50; i++) {
-// 		const particle = document.createElement('div');
-// 		particle.className = 'particle';
-// 		particle.innerHTML = '❤️';
-// 		particle.style.left = Math.random() * 100 + 'vw';
-// 		particle.style.animationDelay = Math.random() * 5 + 's';
-// 		document.querySelector('.particles').appendChild(particle);
-// 	}
-// }
 function initializeParticles() {
 	const container = document.querySelector('.particles');
 	for (let i = 0; i < 50; i++) {
